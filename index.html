@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sentient</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body style="overflow-y: hidden; overflow-x: hidden;">
+
+  <!-- All of the Node.js APIs are available in this renderer process. -->
+  <script>
+    //document.write(process.versions.node)
+  </script>
+  <script>
+    //document.write(process.versions.chrome)
+  </script>
+  <script>
+    //document.write(process.versions.electron)
+    // You can also require other files to run in this process
+    require('./renderer')
+  </script>
+  <!-- <img id="img" style="width:768px; height:520px; margin: -8px;"> -->
+  <!-- <video class="size" id="video" controls width="768" height="520" margin="-8px" autoPlay playsInline>
+  </video> -->
+  <canvas class="size" width="1366" height="768" position="fixed"; top="0px"; left="0px"; margin="-8px" />
+</body>
+
+</html>

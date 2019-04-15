@@ -1,0 +1,46 @@
+{
+  "name": "sentient",
+  "version": "1.0.0",
+  "description": "A minimal Electron application for cameras",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "iohook": {
+    "targets": [
+      "node-51",
+      "electron-53"
+    ],
+    "platforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {},
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^1.0.0",
+    "@tensorflow/tfjs": "^1.0.4",
+    "electron": "^4.0.1",
+    "iohook": "^0.3.1",
+    "node-onvif": "^0.1.7",
+    "phaser": "^3.15.1",
+    "promise": "^8.0.3",
+    "rtsp-ffmpeg": "0.0.14",
+    "stringy": "^0.1.0"
+  }
+}
